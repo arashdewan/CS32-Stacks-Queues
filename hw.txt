@@ -1,0 +1,43 @@
+2. Given the algorithm, main function, and maze shown at the end of problem 1, what are the first 12 (r,c) coordinates popped off the stack by the algorithm?
+
+1 (3,4)
+2 (3,3)
+3 (3,5)
+4 (2,5)
+5 (1,5)
+6 (1,6)
+7 (1,7)
+8 (1,8)
+9 (2,8)
+10 (4,4)
+11 (5,4)
+12 (5,5)
+
+    
+4. Given the same main function and maze as are shown at the end of problem 1, what are the first 12 (r,c) coordinates popped from the queue in your queue-based algorithm?
+
+1 (3,4)
+2 (4,4)
+3 (3,5)
+4 (3,3)
+5 (5,4)
+6 (3,6)
+7 (2,5)
+8 (6,4)
+9 (5,5)
+10 (1,5)
+11 (7,4)
+12 (5,6)
+
+How do the two algorithms differ from each other? (Hint: how and why do they visit cells in the maze in a different order?)
+
+A stack algorithm visits cells by going through one path until it reaches a dead end.
+It uses the current coord and bases the next decision off that.
+This is because it pops from the top, so it looks at that, and then decides.
+However, a queue will visit the cells by seeing all the possible paths,
+and branching out from all of those.
+This is because it pops from the front, and looks at the oldest coord to decide.
+By checking all possible outcomes, the queue works more efficiently to find the
+shortest distance from the coordinate.
+
+
